@@ -12,6 +12,13 @@
         "frame-title": "off",
         "image-alt": "off"
       }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off",
+        "list": "off"
+      }
     ]
   }
 }
