@@ -1,0 +1,155 @@
+.mini-zoom {
+  animation: mini-zoom 3s ease-in-out 0s infinite normal both;
+  padding: 15px;
+}
+@keyframes mini-zoom {
+  0% {
+    transform: scale(100%);
+  }
+
+  50% {
+    transform: scale(106%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.white-contrast {
+  border-radius: 55px;
+  background-color: rgba(207, 206, 206, 0.5);
+  padding: 15px;
+}
+.contrast-blue {
+  border-radius: 25px;
+  background-color: rgba(110, 248, 248, 0.5);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-red {
+  border-radius: 25px;
+  background-color: rgba(255, 164, 164, 0.8);
+  padding: 3px;
+  margin: 3px;
+}
+.contrast-green {
+  border-radius: 25px;
+  background-color: rgba(200, 255, 164, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-orange {
+  border-radius: 25px;
+  background-color: rgba(255, 226, 164, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-pink {
+  border-radius: 25px;
+  background-color: rgba(255, 164, 247, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-turquesa {
+  border-radius: 25px;
+  background-color: rgba(164, 255, 240, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-brown {
+  border-radius: 25px;
+  background-color: rgba(255, 193, 164, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-purple {
+  border-radius: 25px;
+  background-color: rgba(237, 164, 255, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.contrast-yellow {
+  border-radius: 25px;
+  background-color: rgba(241, 255, 164, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+
+.black-contrast {
+  border-radius: 55px;
+  background-color: rgba(92, 92, 92, 0.6);
+  padding: 15px;
+}
+.b-blue {
+  border-radius: 25px;
+  background-color: rgba(65, 95, 216, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.b-guind {
+  border-radius: 25px;
+  background-color: rgba(216, 65, 146, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.b-red {
+  border-radius: 25px;
+  background-color: rgba(216, 65, 65, 0.7);
+  padding: 5px;
+  margin: 3px;
+}
+.b-cian {
+  border-radius: 25px;
+  background-color: rgba(65, 216, 216, 0.6);
+  padding: 5px;
+  margin: 3px;
+}
+.b-yellow {
+  border-radius: 25px;
+  background-color: rgba(203, 216, 65, 0.6);
+  padding: 5px;
+  margin: 3px;
+}
+.b-purple {
+  border-radius: 25px;
+  background-color: rgba(135, 65, 216, 0.6);
+  padding: 5px;
+  margin: 3px;
+}
+.b-green {
+  border-radius: 25px;
+  background-color: rgba(78, 216, 65, 0.6);
+  padding: 5px;
+  margin: 3px;
+}
+.b-brown {
+  border-radius: 25px;
+  background-color: rgba(216, 146, 65, 0.6);
+  padding: 5px;
+  margin: 3px;
+}
+
+.b-image {
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+.div1 {
+  border: solid 2px;
+  border-radius: 35px;
+}
+
+/* Aplica un borde redondeado a la imagen */
+.imagen-redonda {
+  border-radius: 35px; /* Esto crea un borde redondeado al 50% del tamaño de la imagen, lo que la hace completamente circular si la imagen es cuadrada */
+  border: 2px solid #000; /* Cambia el color y el grosor del borde según tus preferencias */
+} /* Estilos para la imagen */
+
+.imagen-esquina {
+  position: fixed; /* Esto fija la imagen en la ventana del navegador */
+  top: 0; /* Coloca la imagen en la parte superior */
+  right: 0; /* Coloca la imagen en la esquina derecha */
+  width: 200px;
+}

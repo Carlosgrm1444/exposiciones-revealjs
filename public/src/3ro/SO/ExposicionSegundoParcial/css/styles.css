@@ -1,0 +1,80 @@
+.portada {
+  text-align: left;
+}
+.portada h2 {
+  background-color: rgb(255, 255, 255, 0.5);
+  width: min-content;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0;
+  color: #000000;
+  margin: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.portada h2:hover {
+  transform: scale(102%);
+  background-color: rgb(255, 255, 255, 0.7);
+}
+.portada p {
+  margin-top: 15px;
+  font-size: 30px;
+  width: 35%;
+  background-color: rgb(255, 255, 255, 0.5);
+  color: #000000;
+  padding: 10px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.portada p:hover {
+  transform: scale(102%);
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.introduccion div {
+  background-color: rgb(255, 255, 255, 0.5);
+  color: #000000;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+  padding: 7px;
+}
+.introduccion div:hover {
+  transform: scale(103%);
+  background-color: rgb(255, 255, 255, 0.7);
+}
+.introduccion h2 {
+  color: #000000;
+}
+
+.black div {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+  padding: 7px;
+}
+.black div:hover {
+  transform: scale(103%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.black h2 {
+  color: #ffffff;
+}
+
+.tuto h3 {
+  background-color: rgb(255, 255, 255, 0.5);
+  width: min-content;
+  text-align: left;
+  vertical-align: top;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 0;
+  color: #000000;
+  margin: 0;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.tuto h3:hover {
+  transform: scale(102%);
+  background-color: rgb(255, 255, 255, 0.7);
+}
