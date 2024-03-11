@@ -1,0 +1,10 @@
+img {
+  border-radius: 30px;
+}
+div {
+  border-radius: 30px;
+}
+.bk {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 15px;
+}
