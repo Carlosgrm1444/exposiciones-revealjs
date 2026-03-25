@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="../../../../dist/reset.css" />
+    <link rel="stylesheet" href="../../../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../../../dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../../../plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- =========================================================
+INNOVA NLD 2026 — Reveal.js deck (solo <section>…</section>)
+Pega esto dentro de: <div class="slides"> ... AQUI ... </div>
+
+Ajustado a Reveal.js:
+- Reveal “autoriza” diapositivas en un tamaño normal (default ~960x700) y luego ESCALA uniforme con transform para que quepa en pantalla. Por eso evitamos layouts tipo web (vh/vw) y usamos tamaños fijos/relativos a la slide. :contentReference[oaicite:0]{index=0}
+- Fondos: todas las slides llevan data-background-gradient o data-background-color. :contentReference[oaicite:1]{index=1}
+========================================================= -->
+
+        <section
+          data-transition="fade"
+          data-background-gradient="linear-gradient(135deg, #0b1220 0%, #0f2b3a 55%, #071018 100%)"
+        >
+          <style>
+            /* ===== Reveal-safe layout: pensado para 960x700 (default) ===== */
+            :root {
+              --glass: rgba(255, 255, 255, 0.08);
+              --stroke: rgba(255, 255, 255, 0.16);
+              --muted: rgba(255, 255, 255, 0.78);
+              --accent: rgba(80, 200, 255, 0.95);
+            }
+            .deck {
+              width: 900px;
+              margin: 0 auto;
+            } /* margen de seguridad dentro de 960 */
+            .kicker {
+              letter-spacing: 0.18em;
+              text-transform: uppercase;
+              font-size: 18px;
+              opacity: 0.9;
+            }
+            .h1 {
+              font-size: 74px;
+              line-height: 1.02;
+              margin: 10px 0 8px;
+            }
+            .sub {
+              font-size: 30px;
+              color: var(--muted);
+              margin: 0;
+            }
+            .pillrow {
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              margin-top: 18px;
+            }
+            .pill {
+              display: inline-flex;
+              align-items: center;
+              gap: 8px;
+              padding: 7px 12px;
+              border-radius: 999px;
+              background: var(--glass);
+              border: 1px solid var(--stroke);
+              font-size: 18px;
+              color: var(--muted);
+            }
+            .grid {
+              display: grid;
+              grid-template-columns: 1.25fr 0.75fr;
+              gap: 18px;
+              margin-top: 18px;
+              align-items: stretch;
+            }
+            .card {
+              background: var(--glass);
+              border: 1px solid var(--stroke);
+              border-radius: 18px;
+              padding: 18px;
+              box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+            }
+            .tag {
+              font-size: 16px;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              opacity: 0.9;
+            }
+            .muted {
+              color: var(--muted);
+            }
+            .hr {
+              height: 1px;
+              background: var(--stroke);
+              border: 0;
+              margin: 14px 0;
+            }
+            .split3 {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              gap: 12px;
+              margin-top: 8px;
+            }
+            .num {
+              font-size: 44px;
+              font-weight: 800;
+              line-height: 1;
+            }
+            .mini {
+              font-size: 16px;
+              color: var(--muted);
+              margin-top: 4px;
+            }
+            .hero {
+              width: 100%;
+              height: 280px; /* fijo para que no se “salga” */
+              border-radius: 16px;
+              object-fit: cover;
+              border: 1px solid var(--stroke);
+              background: #111;
+              display: block;
+            }
+            .note {
+              font-size: 14px;
+              color: var(--muted);
+              margin-top: 10px;
+            }
+            .accent-dot {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: var(--accent);
+              box-shadow: 0 0 0 5px rgba(80, 200, 255, 0.18);
+              display: inline-block;
+              margin-right: 10px;
+              transform: translateY(-1px);
+            }
+            /* evita que listas se vayan enormes por la tipografía de reveal */
+            .deck ul {
+              font-size: 22px;
+            }
+            .deck li {
+              margin: 6px 0;
+            }
+          </style>
+
+          <div class="deck">
+            <div class="kicker">Propuesta para IMJUVE Nuevo Laredo</div>
+            <div class="h1">INNOVA NLD 2026</div>
+            <p class="sub">
+              Foro juvenil de ciencia, transformación y comercio
+            </p>
+
+            <div class="pillrow">
+              <span class="pill">📍 Nuevo Laredo, Tamaulipas</span>
+              <span class="pill"
+                >🗓 Finales de marzo – antes del 15 de abril 2026</span
+              >
+              <span class="pill">⏱ Medio día</span>
+              <span class="pill"
+                >👥 70–100 asistentes (convocatoria abierta)</span
+              >
+            </div>
+
+            <div class="grid">
+              <div class="card">
+                <div class="tag">Organizadores principales</div>
+                <div
+                  style="font-size: 34px; font-weight: 800; margin-top: 10px"
+                >
+                  Carlos Gabriel Rodríguez · Diego Alvarado
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 22px; margin-top: 12px; line-height: 1.25"
+                >
+                  Formato tipo TEDx (ponencias cortas) + panel especializado,
+                  con enfoque juvenil moderno, tecnológico y escalable a nivel
+                  regional.
+                </div>
+
+                <hr class="hr" />
+
+                <div class="split3">
+                  <div>
+                    <div class="num">6</div>
+                    <div class="mini">ponencias (10–15 min)</div>
+                  </div>
+                  <div>
+                    <div class="num">2</div>
+                    <div class="mini">magistrales (20–30 min)</div>
+                  </div>
+                  <div>
+                    <div class="num">1</div>
+                    <div class="mini">panel (45 min)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <!-- Placeholder 1600x900 (16:9). Solo cambia el URL -->
+                <img
+                  class="hero"
+                  src="https://picsum.photos/seed/innova-hero/1600/900"
+                  alt="Placeholder"
+                />
+                <div class="note">
+                  (Imagen de ejemplo. Reemplazar por foto del
+                  recinto/juventud/innovación.)
+                </div>
+              </div>
+            </div>
+
+            <aside class="notes">
+              Portada: claridad (qué, cuándo, cuánto dura, tamaño) + “premium
+              accesible”.
+            </aside>
+          </div>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background-gradient="linear-gradient(135deg, #0a0f18 0%, #121a27 50%, #0a0f18 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Justificación</div>
+            <div style="font-size: 62px; font-weight: 900; line-height: 1.05">
+              PROBLEMA LOCAL QUE ATIENDE INNOVA NLD
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                margin-top: 18px;
+              "
+            >
+              <div class="card">
+                <div style="font-size: 34px; font-weight: 900">
+                  <span class="accent-dot"></span>Fomentar pensamiento crítico y
+                  cultura científica
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 10px; line-height: 1.25"
+                >
+                  Más espacios donde la juventud exponga ideas con sustento y
+                  reciba retroalimentación real.
+                </div>
+
+                <div style="height: 12px"></div>
+
+                <div style="font-size: 34px; font-weight: 900">
+                  <span class="accent-dot"></span>Conectar universidades e
+                  instituciones
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 10px; line-height: 1.25"
+                >
+                  Vinculación estructurada: academia ↔ sector público ↔ sector
+                  privado.
+                </div>
+              </div>
+
+              <div class="card">
+                <div style="font-size: 34px; font-weight: 900">
+                  <span class="accent-dot"></span>No existe un evento juvenil
+                  formal con este mix
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 10px; line-height: 1.25"
+                >
+                  Ciencia + tecnología + innovación + emprendimiento/comercio en
+                  un solo formato atractivo.
+                </div>
+
+                <div style="height: 12px"></div>
+
+                <div style="font-size: 34px; font-weight: 900">
+                  <span class="accent-dot"></span>Accesibilidad como
+                  diferenciador
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 10px; line-height: 1.25"
+                >
+                  Experiencia de alto nivel a costo cero para asistentes (con
+                  soporte institucional).
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              style="
+                margin-top: 16px;
+                padding: 14px 18px;
+                background: rgba(80, 200, 255, 0.1);
+                border-color: rgba(80, 200, 255, 0.22);
+              "
+            >
+              <div style="font-size: 22px">
+                <b>Idea fuerza:</b> “Calidad &gt; cantidad”. Arranque sólido,
+                replicable, con proyección anual.
+              </div>
+            </div>
+
+            <aside class="notes">
+              Reforzar “vacío actual” + por qué IMJUVE se posiciona como
+              habilitador.
+            </aside>
+          </div>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background-gradient="linear-gradient(135deg, #0b1220 0%, #0f2436 55%, #0b1220 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Público objetivo</div>
+            <div style="font-size: 70px; font-weight: 900; line-height: 1.02">
+              ¿A QUIÉN VA DIRIGIDO?
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 16px;
+                margin-top: 18px;
+              "
+            >
+              <div class="card">
+                <div class="muted" style="font-size: 22px; line-height: 1.25">
+                  Jóvenes con trayectoria demostrable en un área específica del
+                  conocimiento y/o innovación aplicada:
+                </div>
+                <ul style="margin-top: 14px">
+                  <li class="fragment">
+                    Estudiantes universitarios con proyectos formales o
+                    prototipos
+                  </li>
+                  <li class="fragment">
+                    Investigadores emergentes (tesis, semilleros, publicaciones,
+                    congresos)
+                  </li>
+                  <li class="fragment">
+                    Emprendedores tecnológicos con base científica
+                  </li>
+                  <li class="fragment">
+                    Perfiles con investigación aplicada a
+                    comercio/tecnología/innovación
+                  </li>
+                </ul>
+                <div class="muted" style="font-size: 18px; margin-top: 10px">
+                  Convocatoria abierta. En esta primera edición no se contempla
+                  comité evaluador formal.
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="hero"
+                  style="height: 320px"
+                  src="https://picsum.photos/seed/innova-aud/1600/900"
+                  alt="Placeholder"
+                />
+                <div class="note">
+                  (Placeholder. Reemplazar por visual de
+                  juventud/presentaciones.)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background-gradient="linear-gradient(135deg, #0a0f18 0%, #1a1f2b 60%, #0a0f18 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Propuesta de valor</div>
+            <div style="font-size: 64px; font-weight: 900; line-height: 1.04">
+              QUÉ HACE DIFERENTE A INNOVA NLD
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+                margin-top: 18px;
+              "
+            >
+              <div class="card fragment">
+                <div class="tag">Accesibilidad</div>
+                <div
+                  style="font-size: 32px; font-weight: 900; margin-top: 10px"
+                >
+                  Premium a costo cero
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 8px; line-height: 1.25"
+                >
+                  Producción cuidada + experiencia tipo TEDx + estructura clara.
+                </div>
+              </div>
+
+              <div class="card fragment">
+                <div class="tag">Credenciales</div>
+                <div
+                  style="font-size: 32px; font-weight: 900; margin-top: 10px"
+                >
+                  Constancias
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 8px; line-height: 1.25"
+                >
+                  Asistencia y ponencia con respaldo institucional.
+                </div>
+              </div>
+
+              <div class="card fragment">
+                <div class="tag">Conexión real</div>
+                <div
+                  style="font-size: 32px; font-weight: 900; margin-top: 10px"
+                >
+                  Interacción dinámica
+                </div>
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 8px; line-height: 1.25"
+                >
+                  Bloque para interactuar (dinámica por definir; guiada, con
+                  objetivo).
+                </div>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top: 14px">
+              <div class="tag">Proyección</div>
+              <div style="font-size: 30px; font-weight: 900; margin-top: 10px">
+                Semilla de un evento anual con alcance regional
+              </div>
+              <div
+                class="muted"
+                style="font-size: 20px; margin-top: 8px; line-height: 1.25"
+              >
+                En 3 años: consolidar una edición anual regional y conectar con
+                congresos y actores estratégicos.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--
+Reemplaza SOLO esta sección por la versión compacta.
+Objetivo: que quepa en Reveal (altura fija/escala), sin quedar “por debajo”.
+Ajustes clave:
+- Baja título y subtítulo.
+- Reduce paddings y gaps.
+- Reduce alto visual de cada card.
+- Usa 2 columnas para repartir filas (en vez de 7 cards en una columna).
+- Mantiene estética.
+-->
+
+        <section
+          data-transition="slide"
+          data-auto-animate
+          data-background-gradient="linear-gradient(135deg, #0b1220 0%, #0c1a2a 55%, #0b1220 100%)"
+        >
+          <style>
+            /* Scope local para no afectar otras slides */
+            .it-deck {
+              width: 900px;
+              margin: 0 auto;
+            }
+            .it-title {
+              font-size: 58px;
+              font-weight: 900;
+              line-height: 1.02;
+              margin-top: 6px;
+            }
+            .it-sub {
+              font-size: 18px;
+              margin-top: 6px;
+            }
+            .it-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 10px;
+              margin-top: 14px;
+              align-items: stretch;
+            }
+            .it-card {
+              background: rgba(255, 255, 255, 0.08);
+              border: 1px solid rgba(255, 255, 255, 0.16);
+              border-radius: 16px;
+              padding: 10px 12px;
+              box-shadow: 0 14px 40px rgba(0, 0, 0, 0.28);
+            }
+            .it-row {
+              display: grid;
+              grid-template-columns: 128px 1fr;
+              gap: 10px;
+              align-items: start;
+            }
+            .it-left .it-h {
+              font-size: 28px;
+              font-weight: 900;
+              line-height: 1.05;
+            }
+            .it-left .it-t {
+              font-size: 16px;
+              opacity: 0.78;
+              margin-top: 2px;
+            }
+            .it-right {
+              font-size: 18px;
+              opacity: 0.82;
+              line-height: 1.18;
+            }
+            .it-right b {
+              opacity: 1;
+            }
+            .it-wide {
+              grid-column: 1 / -1;
+            } /* para cards que quieres a doble ancho */
+            .it-kicker {
+              font-size: 16px;
+              letter-spacing: 0.18em;
+              text-transform: uppercase;
+              opacity: 0.9;
+            }
+            .it-muted {
+              opacity: 0.78;
+            }
+            /* Para evitar que Reveal suba demasiado el tamaño base */
+            .it-deck p,
+            .it-deck div {
+              margin: 0;
+            }
+          </style>
+
+          <div class="it-deck">
+            <div class="it-kicker">Estructura del evento</div>
+            <div class="it-title" data-auto-animate>ITINERARIO (MEDIO DÍA)</div>
+            <div class="it-sub it-muted" data-auto-animate>
+              Integrando el esquema acordado: 2 bloques temáticos + panel
+              especializado.
+            </div>
+
+            <!-- Grid 2 columnas para que quepa en altura -->
+            <div class="it-grid" data-auto-animate>
+              <!-- 1 -->
+              <div class="it-card fragment">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Apertura</div>
+                    <div class="it-t it-muted">15 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    Bienvenida institucional + propósito + reglas del formato
+                    (tipo TEDx).
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="it-card fragment">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Coffee<br />Break</div>
+                    <div class="it-t it-muted">20 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    Transición + convivencia ligera (control de tiempos).
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 (doble ancho por texto más largo) -->
+              <div class="it-card fragment it-wide">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Bloque 1</div>
+                    <div class="it-t it-muted">≈ 90 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    <b>Educación e investigación</b>: 3 ponencias (~15 min) + 1
+                    magistral (20–30 min). Incluye mención breve de
+                    aliados/patrocinadores (15 min).
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 (doble ancho) -->
+              <div class="it-card fragment it-wide">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Bloque 2</div>
+                    <div class="it-t it-muted">≈ 90 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    <b>Emprendimiento y comercio</b>: 3 ponencias (~15 min) + 1
+                    magistral (20–30 min).
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="it-card fragment">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Interacción</div>
+                    <div class="it-t it-muted">30 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    Espacio para interactuar dinámicamente (dinámica por
+                    definir; guiada y con objetivo).
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="it-card fragment">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Panel</div>
+                    <div class="it-t it-muted">45 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    4 perfiles: academia + empresa + sector privado + visión
+                    local. Debate crítico + preguntas del público.
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7 (doble ancho, cierre) -->
+              <div class="it-card fragment it-wide">
+                <div class="it-row">
+                  <div class="it-left">
+                    <div class="it-h">Cierre</div>
+                    <div class="it-t it-muted">20 min</div>
+                  </div>
+                  <div class="it-right it-muted">
+                    Reconocimientos + mensaje final + siguiente paso (edición
+                    anual / sede futura).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="notes">
+              Esta versión usa 2 columnas y reduce paddings para caber en Reveal
+              sin overflow.
+            </aside>
+          </div>
+        </section>
+
+        <section
+          data-transition="fade"
+          data-background-gradient="linear-gradient(135deg, #081018 0%, #0f2436 55%, #081018 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Panel especializado</div>
+            <div style="font-size: 64px; font-weight: 900; line-height: 1.04">
+              FORMATO DE PANEL (PROPUESTO)
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 16px;
+                margin-top: 18px;
+              "
+            >
+              <div class="card">
+                <div class="tag">Objetivo</div>
+                <div
+                  style="font-size: 30px; font-weight: 900; margin-top: 10px"
+                >
+                  Debate crítico y aplicable para Nuevo Laredo
+                </div>
+
+                <div
+                  class="muted"
+                  style="font-size: 20px; margin-top: 10px; line-height: 1.25"
+                >
+                  Tema paraguas: <b>IA y transformación regional</b> (industria,
+                  educación, comercio y talento).
+                </div>
+
+                <hr class="hr" />
+
+                <div class="tag">Preguntas guía (ejemplos)</div>
+                <ul style="margin-top: 10px">
+                  <li class="fragment">
+                    Impactos positivos y negativos de la IA en la industria
+                    local
+                  </li>
+                  <li class="fragment">
+                    Cómo prepararnos para adoptar IA de forma responsable
+                  </li>
+                  <li class="fragment">
+                    Oportunidades y riesgos para Nuevo Laredo en los próximos 24
+                    meses
+                  </li>
+                </ul>
+
+                <div class="muted" style="font-size: 18px; margin-top: 10px">
+                  Cierre con preguntas del público (moderado).
+                </div>
+              </div>
+
+              <div class="card">
+                <img
+                  class="hero"
+                  style="height: 320px"
+                  src="https://picsum.photos/seed/innova-panel/1600/900"
+                  alt="Placeholder"
+                />
+                <div class="note">
+                  (Placeholder. Reemplazar por foto/render de escenario/panel.)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background-gradient="linear-gradient(135deg, #0a0f18 0%, #151f2a 60%, #0a0f18 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Memorias</div>
+            <div style="font-size: 62px; font-weight: 900; line-height: 1.05">
+              MEMORIAS (OPCIONAL)
+            </div>
+
+            <div class="card" style="margin-top: 18px">
+              <div class="muted" style="font-size: 22px; line-height: 1.25">
+                Para formalizar y dar continuidad, se propone una memoria
+                digital básica (ligera):
+              </div>
+
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 14px;
+                  margin-top: 14px;
+                "
+              >
+                <div class="card" style="padding: 14px">
+                  <div style="font-size: 26px; font-weight: 900">Incluye</div>
+                  <ul style="margin-top: 10px">
+                    <li>Resúmenes de ponencias</li>
+                    <li>Datos de autores/ponentes</li>
+                    <li>Sede, fecha, organizadores</li>
+                  </ul>
+                </div>
+                <div class="card" style="padding: 14px">
+                  <div style="font-size: 26px; font-weight: 900">
+                    Beneficios
+                  </div>
+                  <ul style="margin-top: 10px">
+                    <li>Eleva reputación académica del evento</li>
+                    <li>Deja registro oficial (edición 1)</li>
+                    <li>Base para escalar en futuras ediciones</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="muted" style="font-size: 18px; margin-top: 10px">
+                En 2026 se mantiene ligero; puede crecer en ediciones futuras.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background-gradient="linear-gradient(135deg, #0b1220 0%, #10273a 55%, #0b1220 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Solicitud a IMJUVE</div>
+            <div style="font-size: 64px; font-weight: 900; line-height: 1.04">
+              QUÉ REQUERIMOS PARA HACERLO VIABLE
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+                margin-top: 18px;
+              "
+            >
+              <div class="card fragment">
+                <div class="tag">Infraestructura</div>
+                <div
+                  style="font-size: 30px; font-weight: 900; margin-top: 10px"
+                >
+                  Espacio
+                </div>
+                <div class="muted" style="font-size: 20px; margin-top: 8px">
+                  Auditorio/sala + audio + proyección.
+                </div>
+              </div>
+              <div class="card fragment">
+                <div class="tag">Alcance</div>
+                <div
+                  style="font-size: 30px; font-weight: 900; margin-top: 10px"
+                >
+                  Difusión
+                </div>
+                <div class="muted" style="font-size: 20px; margin-top: 8px">
+                  Convocatoria + registro + alcance.
+                </div>
+              </div>
+              <div class="card fragment">
+                <div class="tag">Operación</div>
+                <div
+                  style="font-size: 30px; font-weight: 900; margin-top: 10px"
+                >
+                  Logística
+                </div>
+                <div class="muted" style="font-size: 20px; margin-top: 8px">
+                  Accesos, tiempos, staff mínimo.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              style="
+                margin-top: 14px;
+                background: rgba(80, 200, 255, 0.1);
+                border-color: rgba(80, 200, 255, 0.22);
+              "
+            >
+              <div style="font-size: 26px; font-weight: 900">
+                Presupuesto básico + reconocimiento oficial
+              </div>
+              <div
+                class="muted"
+                style="font-size: 20px; margin-top: 8px; line-height: 1.25"
+              >
+                IMJUVE como aliado principal. Carlos y Diego como responsables
+                del diseño, estructura y ejecución.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-transition="fade"
+          data-background-gradient="linear-gradient(135deg, #070d14 0%, #0b1a26 55%, #070d14 100%)"
+        >
+          <div class="deck">
+            <div class="kicker">Siguiente paso</div>
+            <div style="font-size: 64px; font-weight: 900; line-height: 1.04">
+              REUNIÓN DE 30 MIN PARA ATERRIZAR EJECUCIÓN
+            </div>
+
+            <div class="card" style="margin-top: 18px">
+              <div class="tag">Agenda sugerida</div>
+
+              <div style="display: grid; gap: 10px; margin-top: 14px">
+                <div class="card" style="padding: 12px 14px">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 140px 1fr;
+                      gap: 12px;
+                    "
+                  >
+                    <div>
+                      <b>Sede</b>
+                      <div class="muted" style="font-size: 18px">5 min</div>
+                    </div>
+                    <div class="muted" style="font-size: 20px">
+                      Opciones de espacio y fecha tentativa.
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="padding: 12px 14px">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 140px 1fr;
+                      gap: 12px;
+                    "
+                  >
+                    <div>
+                      <b>Difusión</b>
+                      <div class="muted" style="font-size: 18px">10 min</div>
+                    </div>
+                    <div class="muted" style="font-size: 20px">
+                      Convocatoria + registro + alcance.
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="padding: 12px 14px">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 140px 1fr;
+                      gap: 12px;
+                    "
+                  >
+                    <div>
+                      <b>Panel</b>
+                      <div class="muted" style="font-size: 18px">10 min</div>
+                    </div>
+                    <div class="muted" style="font-size: 20px">
+                      Criterios para invitar panelistas y moderación.
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="padding: 12px 14px">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 140px 1fr;
+                      gap: 12px;
+                    "
+                  >
+                    <div>
+                      <b>Logística</b>
+                      <div class="muted" style="font-size: 18px">5 min</div>
+                    </div>
+                    <div class="muted" style="font-size: 20px">
+                      Staff mínimo, reconocimientos, tiempos.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              style="
+                margin-top: 14px;
+                background: rgba(80, 200, 255, 0.1);
+                border-color: rgba(80, 200, 255, 0.22);
+              "
+            >
+              <div style="font-size: 20px">
+                <b>Meta:</b> definir ruta de trabajo (enero–marzo 2026) con ~12
+                h/semana del equipo organizador.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          data-transition="fade"
+          data-background-gradient="linear-gradient(135deg, #0b1220 0%, #0f2b3a 60%, #0b1220 100%)"
+        >
+          <div class="deck" style="text-align: center">
+            <div class="kicker">Cierre</div>
+            <div style="font-size: 64px; font-weight: 900; line-height: 1.04">
+              ¿AGENDAMOS PARA PRESENTARTE LA PROPUESTA COMPLETA?
+            </div>
+            <div class="muted" style="font-size: 24px; margin-top: 10px">
+              Carlos Gabriel Rodríguez · Diego Alvarado
+            </div>
+
+            <div
+              class="pillrow"
+              style="justify-content: center; margin-top: 18px"
+            >
+              <span class="pill">INNOVA NLD 2026</span>
+              <span class="pill"
+                >Ciencia · Innovación · Conexión · Comercio</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../../../dist/reveal.js"></script>
+    <script src="../../../../plugin/notes/notes.js"></script>
+    <script src="../../../../plugin/markdown/markdown.js"></script>
+    <script src="../../../../plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>

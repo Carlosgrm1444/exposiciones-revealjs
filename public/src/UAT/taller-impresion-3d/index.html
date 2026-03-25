@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="../../../dist/reset.css" />
+    <link rel="stylesheet" href="../../../dist/reveal.css" />
+    <link rel="stylesheet" href="../../../dist/theme/black.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../../../plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="hero-slide" data-auto-animate>
+          <div class="hero-badge">Taller • Impresión 3D • Nika</div>
+          <h1>De tu diseño a la realidad: crea e imprime en 3D</h1>
+          <p class="hero-subtitle">
+            Un recorrido práctico desde una imagen 2D hasta una pieza lista para
+            imprimir.
+          </p>  
+          <div class="hero-grid">
+            <div class="glass-card logo-card">
+              <div class="placeholder small has-image logo-placeholder logo-banner logo-frame">
+                <img
+                  src="assets/img/nika-logo.jpg"
+                  alt="Logo de Nika"
+                  class="slide-image logo-rect"
+                />
+              </div>
+            </div>
+            <div class="glass-card align-left">
+              <h3>En breve comenzamos</h3>
+              <p>
+                Prepárate para conocer el flujo completo de diseño, modelado y
+                preparación de un llavero para impresión 3D.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Presentación</div>
+          <h2>Nika</h2>
+          <div class="grid-2">
+            <div>
+              <p class="lead">
+                Nika es un emprendimiento enfocado en transformar ideas en
+                soluciones físicas a través de diseño digital e impresión 3D.
+                Nos especializamos en crear productos personalizados,
+                prototipos funcionales y piezas adaptadas a necesidades
+                específicas, acercando la tecnología de fabricación a personas
+                y negocios.
+              </p>
+              <div class="pill-row">
+                <span class="pill">Diseño digital</span>
+                <span class="pill">Impresión 3D</span>
+                <span class="pill">Personalización</span>
+                <span class="pill">Prototipos funcionales</span>
+              </div>
+            </div>
+            <div class="placeholder has-image logo-placeholder logo-banner logo-frame">
+              <img
+                src="assets/img/nika-logo.jpg"
+                alt="Imagen representativa de Nika"
+                class="slide-image logo-rect"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide compact-media-slide team-slide">
+          <div class="section-kicker">Presentación</div>
+          <h2>¿Quiénes somos?</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                Somos un equipo/dúo enfocado en fabricación de modelos físicos
+                y digitales para todo público que quiera hacer sus ideas en
+                algo palpable.
+              </p>
+              <ul class="clean-list">
+                <li>Aprendemos creando</li>
+                <li>Trabajamos con herramientas accesibles</li>
+                <li>Buscamos soluciones visuales y funcionales</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/equipo-nika.jpg"
+                alt="Foto del equipo o espacio de trabajo"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Presentación</div>
+          <h2>¿Qué hacemos?</h2>
+          <div class="card-grid four">
+            <div class="info-card">
+              <h3>Diseño 2D</h3>
+              <p>
+                Convertimos ideas visuales en trazos limpios y listos para
+                producción.
+              </p>
+            </div>
+            <div class="info-card">
+              <h3>Modelado 3D</h3>
+              <p>
+                Transformamos vectores e ideas en piezas editables y
+                fabricables.
+              </p>
+            </div>
+            <div class="info-card">
+              <h3>Impresión 3D</h3>
+              <p>
+                Fabricamos piezas físicas para personalización, prototipos y
+                proyectos creativos.
+              </p>
+            </div>
+            <div class="info-card">
+              <h3>Proyectos a medida</h3>
+              <p>
+                Desarrollamos objetos funcionales o decorativos según cada
+                necesidad.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>¿Qué es la impresión 3D?</h2>
+          <div class="grid-2">
+            <div>
+              <p class="lead">
+                Es un proceso de fabricación en el que un objeto se construye
+                capa por capa a partir de un modelo digital.
+              </p>
+              <p>
+                En lugar de cortar material, lo va depositando o solidificando
+                hasta formar la pieza final.
+              </p>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/impresion-3d.gif"
+                alt="Impresora 3D trabajando capa por capa"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>FDM vs Resina</h2>
+          <div class="compare-grid">
+            <div class="compare-card">
+              <h3>FDM</h3>
+              <ul class="clean-list">
+                <li>Más accesible</li>
+                <li>Ideal para piezas funcionales</li>
+                <li>Proceso más limpio y sencillo</li>
+                <li>Detalle medio</li>
+              </ul>
+              <div class="placeholder small has-image">
+                <img
+                  src="assets/img/impresion-fdm.gif"
+                  alt="Ejemplo de pieza FDM"
+                  class="slide-image"
+                />
+              </div>
+            </div>
+            <div class="compare-card">
+              <h3>Resina</h3>
+              <ul class="clean-list">
+                <li>Mayor detalle visual</li>
+                <li>Buena para piezas pequeñas</li>
+                <li>Más limpieza y postproceso</li>
+                <li>Mayor cuidado de uso</li>
+              </ul>
+              <div class="placeholder small has-image">
+                <img
+                  src="assets/img/impresion-resina.gif"
+                  alt="Ejemplo de pieza de resina"
+                  class="slide-image"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>¿Cómo funciona la impresión FDM?</h2>
+          <div class="grid-2">
+            <div>
+              <ul class="clean-list">
+                <li>Un filamento entra al extrusor</li>
+                <li>La boquilla lo calienta</li>
+                <li>El material se deposita siguiendo trayectorias</li>
+                <li>La pieza se forma capa por capa</li>
+              </ul>
+              <p class="muted">
+                Todo el proceso parte de un archivo preparado en un slicer.
+              </p>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/flujo-fdm.png"
+                alt="Diagrama del flujo FDM"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>El filamento</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                Es el material base que usa la impresora FDM. Viene enrollado y
+                se funde para formar la pieza.
+              </p>
+              <ul class="clean-list">
+                <li>PLA es uno de los más comunes</li>
+                <li>Fácil de trabajar en talleres</li>
+                <li>Disponible en muchos colores</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/variedad-filamentos.avif"
+                alt="Variedad de filamentos"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>Las capas</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                La impresión 3D construye piezas mediante capas muy delgadas
+                apiladas una sobre otra.
+              </p>
+              <ul class="clean-list">
+                <li>Menor altura de capa = más detalle</li>
+                <li>Mayor altura de capa = más rapidez</li>
+                <li>El acabado visual depende mucho de esto</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/capas-impresion3d.png"
+                alt="Detalle de capas en impresión 3D"
+                class="slide-image contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>Las boquillas</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                La boquilla es la salida por donde se deposita el material
+                fundido. Su diámetro influye en detalle y velocidad.
+              </p>
+              <ul class="clean-list">
+                <li>0.4 mm es una medida muy común</li>
+                <li>Boquillas más finas dan más detalle</li>
+                <li>Boquillas más grandes imprimen más rápido</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/boquillas-impresion3d.webp"
+                alt="Boquilla y hotend"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>Los soportes</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                Algunas geometrías necesitan estructuras temporales para
+                sostener partes que quedarían “en el aire” durante la impresión.
+              </p>
+              <ul class="clean-list">
+                <li>Se usan en voladizos o formas complejas</li>
+                <li>Luego se retiran</li>
+                <li>Pueden dejar marcas en la superficie</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/soportes-impresion3d.webp"
+                alt="Pieza con soportes"
+                class="slide-image contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide compact-media-slide multicolor-slide">
+          <div class="section-kicker">Introducción</div>
+          <h2>El multicolor</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                También es posible imprimir con más de un color, aunque esto
+                suele implicar una preparación adicional.
+              </p>
+              <ul class="clean-list">
+                <li>Sistemas automáticos más avanzados</li>
+                <li>Mayor complejidad en el flujo</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/impresora-multicolor.jpg"
+                alt="Impresión multicolor"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide highlight-slide goal-slide-compact">
+          <div class="section-kicker">Meta del taller</div>
+          <h2>Lo que lograrán hoy</h2>
+          <div class="grid-2">
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/llavero-ejemplo.jpg"
+                alt="Llavero impreso en 3D de ejemplo"
+                class="slide-image keychain-focus"
+              />
+            </div>
+            <div class="callout-box">
+              <p class="big-quote">
+                Hoy te irás con el conocimiento suficiente para diseñar e
+                imprimir un llaverito.
+              </p>
+              <p class="muted">
+                Verás el proceso completo desde una referencia visual hasta una
+                pieza lista para fabricar.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Flujo de trabajo</div>
+          <h2>Del diseño a la impresión</h2>
+          <div class="flow-steps">
+            <div class="flow-row flow-row--single">
+              <div class="step-card">
+                <span>1</span>
+                <h3>Imagen</h3>
+                <p>Referencia visual inicial</p>
+              </div>
+              <div class="flow-arrow flow-arrow--right">→</div>
+              <div class="step-card">
+                <span>2</span>
+                <h3>SVG</h3>
+                <p>Vector limpio y editable</p>
+              </div>
+              <div class="flow-arrow flow-arrow--right">→</div>
+              <div class="step-card">
+                <span>3</span>
+                <h3>Modelo 3D</h3>
+                <p>Extrusión y volumen</p>
+              </div>
+              <div class="flow-arrow flow-arrow--right">→</div>
+              <div class="step-card">
+                <span>4</span>
+                <h3>Slicer</h3>
+                <p>Preparación técnica</p>
+              </div>
+              <div class="flow-arrow flow-arrow--right">→</div>
+              <div class="step-card">
+                <span>5</span>
+                <h3>Impresión</h3>
+                <p>Pieza física final</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Diseño 2D</div>
+          <h2>¿Qué es Inkscape?</h2>
+          <div class="grid-2">
+            <div>
+              <p>
+                Es un editor de gráficos vectoriales. Nos ayuda a convertir
+                imágenes en trazos limpios y escalables.
+              </p>
+              <ul class="clean-list">
+                <li>Ideal para logos y formas simples</li>
+                <li>Permite calcar diseños</li>
+                <li>Exporta en SVG</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/ui-inkscape.png"
+                alt="Interfaz de Inkscape"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Diseño 2D</div>
+          <h2>¿Por qué usamos Inkscape?</h2>
+          <div class="card-grid three">
+            <div class="info-card">
+              <h3>Calcar</h3>
+              <p>Pasamos una imagen a una forma más limpia y controlada.</p>
+            </div>
+            <div class="info-card">
+              <h3>Vectorizar</h3>
+              <p>Obtenemos un archivo que puede escalar sin perder claridad.</p>
+            </div>
+            <div class="info-card">
+              <h3>Exportar SVG</h3>
+              <p>Ese formato será la base para el modelado 3D posterior.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide compact-gallery-slide">
+          <div class="section-kicker">Diseño 2D</div>
+          <h2>Ejemplo de diseño</h2>
+          <div class="single-example-wrap">
+            <div class="placeholder has-image single-example-card">
+              <img
+                src="assets/img/angular-example.png"
+                alt="Ejemplo de diseño Angular para extrusión"
+                class="slide-image contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Pasemos a diseñar</h2>
+          <p>
+            Ahora iremos a Inkscape para calcar, limpiar el diseño y dejarlo
+            listo para el siguiente paso.
+          </p>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Exportación a SVG</h2>
+          <p>
+            Guardaremos el diseño en un formato vectorial que después podremos
+            llevar al software de modelado.
+          </p>
+        </section>
+
+        <section class="content-slide compact-cards-slide">
+          <div class="section-kicker">Modelado 3D</div>
+          <h2>Software de modelado 3D</h2>
+          <div class="card-grid four">
+            <div class="info-card">
+              <img
+                src="assets/img/fusion-logo.jpg"
+                alt="Logo de Fusion 360"
+                class="card-logo"
+              />
+              <h3>Fusion 360</h3>
+              <p>Muy fuerte en CAD y diseño técnico.</p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/blender-logo.png"
+                alt="Logo de Blender"
+                class="card-logo"
+              />
+              <h3>Blender</h3>
+              <p>Versátil, potente y muy útil para este flujo.</p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/thinkercad-logo.jpeg"
+                alt="Logo de Tinkercad"
+                class="card-logo"
+              />
+              <h3>Tinkercad</h3>
+              <p>Sencillo y amigable para primeros pasos.</p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/freecad-logo.webp"
+                alt="Logo de FreeCAD"
+                class="card-logo"
+              />
+              <h3>FreeCAD</h3>
+              <p>Opción libre orientada a modelado técnico.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Modelado 3D</div>
+          <h2>¿Por qué escogimos Blender?</h2>
+          <div class="grid-2">
+            <div>
+              <ul class="clean-list">
+                <li>Permite trabajar bien con SVG</li>
+                <li>Es muy versátil</li>
+                <li>Nos da control sobre la extrusión</li>
+                <li>Encaja bien en este flujo de trabajo</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/ui-blender.png"
+                alt="Interfaz de Blender"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Convertir el objeto a editable</h2>
+          <p>
+            Ajustaremos el elemento importado para poder trabajar mejor su forma
+            y prepararlo para darle volumen.
+          </p>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Extruir</h2>
+          <p>
+            En este paso convertiremos una forma plana en un objeto con volumen
+            listo para fabricar.
+          </p>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Exportar como STL</h2>
+          <p>
+            Guardaremos el modelo en uno de los formatos más usados para llevar
+            piezas al proceso de impresión 3D.
+          </p>
+        </section>
+
+        <section class="hero-slide recess-slide">
+          <div class="hero-badge">Pausa</div>
+          <h1>Receso</h1>
+          <p class="hero-subtitle">
+            Volvemos en unos minutos para preparar el modelo y enviarlo a
+            impresión.
+          </p>
+        </section>
+
+        <section class="content-slide compact-cards-slide">
+          <div class="section-kicker">Slicing</div>
+          <h2>Slicers más usados</h2>
+          <div class="card-grid four">
+            <div class="info-card">
+              <img
+                src="assets/img/orca-logo.png"
+                alt="Logo de OrcaSlicer"
+                class="card-logo"
+              />
+              <h3>OrcaSlicer</h3>
+              <p>
+                Moderno, constantemente actualizado, mayor control y
+                herramientas.
+              </p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/cura-logo.png"
+                alt="Logo de Cura"
+                class="card-logo"
+              />
+              <h3>Cura</h3>
+              <p>Sencillo y básico para principiantes.</p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/prusa-slicer-logo.jpg"
+                alt="Logo de PrusaSlicer"
+                class="card-logo"
+              />
+              <h3>PrusaSlicer</h3>
+              <p>Elegante, bastante usado por la comunidad.</p>
+            </div>
+            <div class="info-card">
+              <img
+                src="assets/img/bambu-studio-logo.webp"
+                alt="Logo de Bambu Studio"
+                class="card-logo"
+              />
+              <h3>Bambu Studio</h3>
+              <p>
+                Herramientas extensas para impresoras de la propia empresa.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Slicing</div>
+          <h2>¿Por qué usamos OrcaSlicer?</h2>
+          <div class="grid-2">
+            <div>
+              <ul class="clean-list">
+                <li>Interfaz moderna</li>
+                <li>Buena vista previa del proceso</li>
+                <li>Parámetros claros y útiles</li>
+                <li>Muy práctico para este taller</li>
+                <li>Muchas herramientas versátiles</li>
+                <li>Estándar de vanguardia para todo público</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/orca-slicer.avif"
+                alt="Interfaz de OrcaSlicer"
+                class="slide-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide">
+          <div class="section-kicker">Slicing</div>
+          <h2>Parámetros básicos</h2>
+          <div class="card-grid five">
+            <div class="mini-card">
+              <h3>Capa</h3>
+              <p>Detalle visual</p>
+            </div>
+            <div class="mini-card">
+              <h3>Relleno</h3>
+              <p>Estructura interna</p>
+            </div>
+            <div class="mini-card">
+              <h3>Soportes</h3>
+              <p>Ayuda temporal</p>
+            </div>
+            <div class="mini-card">
+              <h3>Velocidad</h3>
+              <p>Tiempo vs calidad</p>
+            </div>
+            <div class="mini-card">
+              <h3>Temperatura</h3>
+              <p>Comportamiento del material</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Llenado de parámetros</h2>
+          <p>
+            Ajustaremos los valores necesarios para que el modelo quede listo
+            para imprimir.
+          </p>
+        </section>
+
+        <section class="transition-slide">
+          <div class="section-kicker">Demostración en vivo</div>
+          <h2>Comenzar a imprimir</h2>
+          <p>
+            Enviaremos el archivo a la impresora. La entrega de las piezas se
+            realizará después.
+          </p>
+        </section>
+
+        <section class="content-slide highlight-slide compact-media-slide exam-slide">
+          <div class="section-kicker">Dinámica</div>
+          <h2>GamiExamen</h2>
+          <div class="grid-2">
+            <div>
+              <p class="lead">
+                Tendremos un pequeño examen en modo dinámico para reforzar lo
+                aprendido.
+              </p>
+              <ul class="clean-list">
+                <li>Participación individual</li>
+                <li>Modo dinámico</li>
+                <li>Los primeros 3 en sacar 100 reciben premio</li>
+              </ul>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/qr-gamiexamen.png"
+                alt="QR de GamiExamen"
+                class="slide-image contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="content-slide compact-media-slide awards-slide">
+          <div class="section-kicker">Cierre de dinámica</div>
+          <h2>Entrega de premios</h2>
+          <div class="grid-2">
+            <div class="callout-box">
+              <p class="big-quote">
+                Reconocimiento a quienes destacaron en la dinámica.
+              </p>
+              <p class="muted">Gracias por participar, aprender y competir.</p>
+            </div>
+            <div class="placeholder has-image">
+              <img
+                src="assets/img/premios.avif"
+                alt="Imagen de premios"
+                class="slide-image contain"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="hero-slide qa-slide">
+          <div class="hero-badge">Cierre</div>
+          <h1>Preguntas y respuestas</h1>
+          <p class="hero-subtitle">
+            Espacio abierto para dudas, comentarios y conversación sobre diseño
+            e impresión 3D.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="../../../dist/reveal.js"></script>
+    <script src="../../../plugin/notes/notes.js"></script>
+    <script src="../../../plugin/markdown/markdown.js"></script>
+    <script src="../../../plugin/highlight/highlight.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
